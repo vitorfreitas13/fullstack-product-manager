@@ -29,16 +29,7 @@ Permite **cadastrar, listar, editar e deletar produtos** diretamente pelo fronte
 ---
 
 ## 📂 Estrutura do projeto
-fullstack-product-manager
-│
-├── back-end # Backend Node + Express
-│ ├── server.js # API com CRUD
-│ └── package.json
-│
-└── front-end # Frontend React + Vite
-├── src
-│ └── App.jsx # Interface principal com formulário e lista
-└── package.json
+
 
 
 ---
@@ -49,8 +40,3 @@ fullstack-product-manager
 
 ```bash
 git clone https://github.com/seu-usuario/fullstack-product-manager.git
-
-2. Backend:
-cd fullstack-product-manager/back-end
-npm install
-node server.js
