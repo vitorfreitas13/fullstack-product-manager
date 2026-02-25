@@ -50,6 +50,7 @@ fullstack-product-manager
 ```bash
 git clone https://github.com/seu-usuario/fullstack-product-manager.git
 
+2. Backend:
 
 cd fullstack-product-manager/back-end
 npm install
