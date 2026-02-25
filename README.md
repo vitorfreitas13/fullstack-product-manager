@@ -4,31 +4,19 @@ Projeto Fullstack completo para gerenciamento de produtos, desenvolvido com Node
 Permite cadastrar, listar, editar e deletar produtos diretamente pelo frontend.
 
 🛠 Tecnologias
-
 Backend: Node.js, Express, MySQL
-
 Frontend: React + Vite, Axios
-
 Banco de dados: MySQL (local ou online)
-
-Testes de API: Thunder Client / Postman
+Testes de API: Thunder Client
 
 🚀 Funcionalidades
-
 CRUD completo:
-
 Cadastrar produtos
-
 Receber lista de produtos
-
 Update: editar produtos
-
 Delete: remover produtos
-
 Frontend conectado à API via Axios
-
 Atualização da lista em tempo real após ações no formulário
-
 Layout simples e funcional para testes e aprendizado
 
 📂 Estrutura do projeto
@@ -42,24 +30,18 @@ fullstack-product-manager
     ├── src
     │   └── App.jsx   # Interface principal com formulário e lista
     └── package.json
+
 ⚡ Como rodar localmente
-
-Clone o repositório:
-
+1 - Clone o repositório:
 git clone https://github.com/seu-usuario/fullstack-product-manager.git
 
-Backend:
-
+2 - Backend:
 cd fullstack-product-manager/back-end
 npm install
 node server.js
 
-Servidor rodando em: http://localhost:3001
-
-Frontend:
-
+3 - Frontend:
 cd ../front-end
 npm install
 npm run dev
-
 Frontend rodando em: http://localhost:5173
