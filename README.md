@@ -29,6 +29,8 @@ Permite **cadastrar, listar, editar e deletar produtos** diretamente pelo fronte
 ---
 
 ## 📂 Estrutura do projeto
+
+```text
 fullstack-product-manager
 │
 ├── back-end
@@ -39,7 +41,6 @@ fullstack-product-manager
     ├── src
     │   └── App.jsx    # Interface principal com formulário e lista
     └── package.json
-
 
 ---
 
