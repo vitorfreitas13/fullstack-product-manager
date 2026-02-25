@@ -56,6 +56,9 @@ cd fullstack-product-manager/back-end
 npm install
 node server.js
 
+3. Frontend:
+
 cd ../front-end
 npm install
 npm run dev
+Frontend rodando em: http://localhost:5173
