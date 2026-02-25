@@ -29,7 +29,16 @@ Permite **cadastrar, listar, editar e deletar produtos** diretamente pelo fronte
 ---
 
 ## 📂 Estrutura do projeto
-
+fullstack-product-manager
+│
+├── back-end # Backend Node + Express
+│ ├── server.js # API com CRUD
+│ └── package.json
+│
+└── front-end # Frontend React + Vite
+├── src
+│ └── App.jsx # Interface principal com formulário e lista
+└── package.json
 
 
 ---
