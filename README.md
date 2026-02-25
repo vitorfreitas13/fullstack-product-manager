@@ -40,3 +40,12 @@ Permite **cadastrar, listar, editar e deletar produtos** diretamente pelo fronte
 
 ```bash
 git clone https://github.com/seu-usuario/fullstack-product-manager.git
+
+
+cd fullstack-product-manager/back-end
+npm install
+node server.js
+
+cd ../front-end
+npm install
+npm run dev
