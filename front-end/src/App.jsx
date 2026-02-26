@@ -107,7 +107,7 @@ function App() {
         <button className="cadastrar" type="submit">
           {editId ? "Atualizar" : "Cadastrar"}
         </button>
-        {editId && <button onClick={resetForm}>Cancelar</button>}
+        {editId && <button className="cancelar" onClick={resetForm}>Cancelar</button>}
       </form>
 
       <h2 className="subtitle">Produtos Cadastrados</h2>
