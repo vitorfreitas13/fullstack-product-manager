@@ -1,0 +1,107 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cadastrar {
+    padding: 10px 10px;
+    background-color: #3047c9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+}
+
+input:focus {
+    outline: none;
+    /* Remove a borda azul/preta padrão do navegador */
+    border: 1px solid #3047c9;
+    box-shadow: 0 0 5px rgba(40, 201, 250, 0.5);
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e2e2e2;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* Botão Editar */
+.buttons button:first-child {
+  background-color: #3498db;
+  color: white;
+}
+
+.buttons button:first-child:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Botão Deletar */
+.buttons button:last-child {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.buttons button:last-child:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}

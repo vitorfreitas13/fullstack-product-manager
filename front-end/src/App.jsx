@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import "./App.css";
 
 function App() {
   const [produtos, setProdutos] = useState([]);
@@ -26,7 +27,11 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const data = { nome, preco: parseFloat(preco), quantidade: parseInt(quantidade) };
+    const data = {
+      nome,
+      preco: parseFloat(preco),
+      quantidade: parseInt(quantidade),
+    };
 
     if (editId) {
       // UPDATE
@@ -74,17 +79,16 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "600px", margin: "auto" }}>
-      <h1>Fullstack Product Manager</h1>
+    <div className="container">
+      <h1 className="title">Fullstack Product Manager</h1>
 
-      <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Nome"
           value={nome}
           onChange={(e) => setNome(e.target.value)}
           required
-          style={{ marginRight: "5px" }}
         />
         <input
           type="number"
@@ -92,7 +96,6 @@ function App() {
           value={preco}
           onChange={(e) => setPreco(e.target.value)}
           required
-          style={{ marginRight: "5px" }}
         />
         <input
           type="number"
@@ -100,19 +103,25 @@ function App() {
           value={quantidade}
           onChange={(e) => setQuantidade(e.target.value)}
           required
-          style={{ marginRight: "5px" }}
         />
-        <button type="submit">{editId ? "Atualizar" : "Cadastrar"}</button>
-        {editId && <button onClick={resetForm} style={{ marginLeft: "5px" }}>Cancelar</button>}
+        <button className="cadastrar" type="submit">
+          {editId ? "Atualizar" : "Cadastrar"}
+        </button>
+        {editId && <button onClick={resetForm}>Cancelar</button>}
       </form>
 
-      <h2>Produtos</h2>
-      <ul>
+      <h2 className="subtitle">Produtos Cadastrados</h2>
+      <ul className="product-list">
         {produtos.map((produto) => (
-          <li key={produto.id} style={{ marginBottom: "5px" }}>
-            {produto.nome} - R$ {produto.preco} - Qtd: {produto.quantidade}{" "}
-            <button onClick={() => handleEdit(produto)} style={{ marginLeft: "5px" }}>Editar</button>
-            <button onClick={() => handleDelete(produto.id)} style={{ marginLeft: "5px" }}>Excluir</button>
+          <li className="list-item" key={produto.id}>
+            <span>
+              {produto.nome} - R$ {produto.preco} -  {produto.quantidade} Unidades
+            </span>
+
+            <div className="buttons">
+              <button onClick={() => handleEdit(produto)}>Editar</button>
+              <button onClick={() => handleDelete(produto.id)}>Deletar</button>
+            </div>
           </li>
         ))}
       </ul>
