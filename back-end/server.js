@@ -67,6 +67,7 @@ app.delete("/produtos/:id", (req, res) => {
 
 // usar a porta que o Railway fornece
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
+
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
