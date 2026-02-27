@@ -7,13 +7,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// conexão com banco remoto usando variáveis de ambiente do Railway
 const db = mysql.createConnection({
-    host: process.env.MYSQLHOST,        // Railway usa MYSQLHOST (sem o underline)
-    user: process.env.MYSQLUSER,        // Railway usa MYSQLUSER
-    password: process.env.MYSQLPASSWORD, // Railway usa MYSQLPASSWORD
-    database: process.env.MYSQLDATABASE, // Railway usa MYSQLDATABASE
-    port: process.env.MYSQLPORT          // É bom adicionar a porta também!
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT
 });
 
 db.connect((err) => {
