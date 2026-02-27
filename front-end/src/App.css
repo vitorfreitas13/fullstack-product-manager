@@ -28,6 +28,7 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .cadastrar {
