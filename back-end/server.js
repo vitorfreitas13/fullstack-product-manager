@@ -1,9 +1,10 @@
+
+require('dotenv').config();
 const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
 
 const app = express();
-
 app.use(cors());
 app.use(express.json());
 
@@ -20,16 +21,15 @@ db.connect((err) => {
         console.log("Erro ao conectar:", err);
     } else {
         console.log("MySQL conectado ✅");
-        
-        // COMANDO PARA CRIAR A TABELA AUTOMATICAMENTE
+
         const sql = `
-            CREATE TABLE IF NOT EXISTS produtos (
-                id INT AUTO_INCREMENT PRIMARY KEY,
-                nome VARCHAR(255) NOT NULL,
-                preco DECIMAL(10,2) NOT NULL,
-                quantidade INT NOT NULL
-            );`;
-            
+        CREATE TABLE IF NOT EXISTS produtos (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            nome VARCHAR(255) NOT NULL,
+            preco DECIMAL(10,2) NOT NULL,
+            quantidade INT NOT NULL
+        );`;
+
         db.query(sql, (err) => {
             if (err) console.log("Erro ao criar tabela:", err);
             else console.log("Tabela 'produtos' pronta para uso! 🚀");
@@ -81,7 +81,6 @@ app.delete("/produtos/:id", (req, res) => {
 
 // usar a porta que o Railway fornece
 const PORT = process.env.PORT || 3001;
-
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
