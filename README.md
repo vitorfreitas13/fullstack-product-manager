@@ -75,3 +75,10 @@ DELETE /produtos/:id
 cd back
 npm install
 node server.js
+```
+
+### 🔹 Frontend
+
+cd front
+npm install
+npm run dev
