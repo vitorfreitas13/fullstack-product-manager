@@ -9,10 +9,10 @@ function App() {
   const [quantidade, setQuantidade] = useState("");
   const [editId, setEditId] = useState(null);
 
-  // const API_URL = "http://localhost:3001/produtos";
+   const API_URL = "http://localhost:5000/produtos";
   // PARA USAR EM SEU COMPUTADOR LOCAL, DESCOMENTE ESSA LINHA E COMENTE A LINHA ABAIXO
   
-  const API_URL = "https://fullstack-product-manager-production.up.railway.app/produtos"; 
+  // const API_URL = "https://fullstack-product-manager-production.up.railway.app/produtos"; 
   // PARA USAR A VERSÃO HOSPEDADA, DEIXE ESSA LINHA COMO ESTÁ
 
 
