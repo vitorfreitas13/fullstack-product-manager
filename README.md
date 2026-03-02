@@ -1,70 +1,97 @@
-# 💻 Fullstack Product Manager
+🚀 Fullstack Product Manager
 
-Sistema Fullstack para gerenciamento de produtos, permitindo cadastrar, listar, editar e deletar produtos.
-Projeto desenvolvido com React no frontend e Node.js + Express no backend, com deploy em nuvem.
+Projeto Fullstack para gerenciamento de produtos, permitindo cadastrar, listar, editar e deletar produtos.
 
----
+Aplicação desenvolvida com React no frontend e Node.js + Express no backend, com deploy em nuvem.
+
+🌍 Projeto Online
+
+🔗 Frontend (Vercel):
+https://SEU-LINK-DA-VERCEL.vercel.app
+
+🔗 Backend (Render):
+https://fullstack-product-manager-1.onrender.com
+
+🔗 API Endpoint:
+https://fullstack-product-manager-1.onrender.com/produtos
 
 🛠️ Tecnologias Utilizadas
 Frontend
+
 React
+
 Axios
+
 CSS
+
 Vercel (Deploy)
 
 Backend
+
 Node.js
+
 Express
+
 CORS
+
 Render (Deploy)
----
 
-## 🚀 Funcionalidades
+⚙️ Funcionalidades
 
-- **CRUD completo:**  
-  - **C**adastrar produtos  
-  - **R**eceber lista de produtos  
-  - **U**pdate: editar produtos  
-  - **D**elete: remover produtos  
+✅ Cadastro de produtos
 
-- **Frontend conectado à API** via Axios  
-- Atualização da lista em tempo real após ações no formulário  
-- Layout simples e funcional para testes e aprendizado  
+✅ Listagem de produtos
 
----
+✅ Atualização de produtos
 
-## 📂 Estrutura do projeto
+✅ Remoção de produtos
 
-```text
-fullstack-product-manager
-│
-├── back-end
-│   ├── server.js       # API com CRUD
-│   └── package.json
-│
-└── front-end
-    ├── src
-    │   └── App.jsx    # Interface principal com formulário e lista
-    └── package.json
+✅ Integração completa entre frontend e backend
 
----
+✅ API REST
 
-## ⚡ Como rodar localmente
+✅ Deploy em produção
 
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/fullstack-product-manager.git
-
-2. Backend:
-
-cd fullstack-product-manager/back-end
+📡 Endpoints da API
+📥 Listar produtos
+GET /produtos
+➕ Criar produto
+POST /produtos
+✏️ Atualizar produto
+PUT /produtos/:id
+❌ Deletar produto
+DELETE /produtos/:id
+🧠 Como rodar o projeto localmente
+🔹 Backend
+cd back
 npm install
 node server.js
 
-3. Frontend:
+Servidor disponível em:
 
-cd ../front-end
+http://localhost:5000
+🔹 Frontend
+cd front
 npm install
 npm run dev
-Frontend rodando em: http://localhost:5173
+📁 Estrutura do Projeto
+/projeto
+   /back
+   /front
+🚀 Melhorias Futuras
+
+Persistência com MongoDB
+
+Autenticação com JWT
+
+Validação de dados
+
+Variáveis de ambiente
+
+Melhorias de UI/UX
+
+👨‍💻 Autor
+
+Seu Nome
+
+Projeto desenvolvido para portfólio, demonstrando integração entre frontend e backend com deploy em nuvem.
