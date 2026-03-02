@@ -9,12 +9,11 @@ function App() {
   const [quantidade, setQuantidade] = useState("");
   const [editId, setEditId] = useState(null);
 
-   const API_URL = "http://localhost:5000/produtos";
+  // const API_URL = "http://localhost:5000/produtos";
   // PARA USAR EM SEU COMPUTADOR LOCAL, DESCOMENTE ESSA LINHA E COMENTE A LINHA ABAIXO
-  
-  // const API_URL = "https://fullstack-product-manager.vercel.app/"; 
-  // PARA USAR A VERSÃO HOSPEDADA, DEIXE ESSA LINHA COMO ESTÁ
 
+  const API_URL = "https://fullstack-product-manager-1.onrender.com/produtos";
+  // PARA USAR A VERSÃO HOSPEDADA, DEIXE ESSA LINHA COMO ESTÁ
 
   // Carregar produtos
   const fetchProdutos = () => {
@@ -112,7 +111,11 @@ function App() {
         <button className="cadastrar" type="submit">
           {editId ? "Atualizar" : "Cadastrar"}
         </button>
-        {editId && <button className="cancelar" onClick={resetForm}>Cancelar</button>}
+        {editId && (
+          <button className="cancelar" onClick={resetForm}>
+            Cancelar
+          </button>
+        )}
       </form>
 
       <h2 className="subtitle">Produtos Cadastrados</h2>
@@ -120,7 +123,8 @@ function App() {
         {produtos.map((produto) => (
           <li className="list-item" key={produto.id}>
             <span>
-              {produto.nome} - R$ {produto.preco} -  {produto.quantidade} Unidades
+              {produto.nome} - R$ {produto.preco} - {produto.quantidade}{" "}
+              Unidades
             </span>
 
             <div className="buttons">
