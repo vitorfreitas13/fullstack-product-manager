@@ -9,13 +9,11 @@ Aplicação desenvolvida com React no frontend e Node.js + Express no backend, c
 ## 🌍 Projeto Online
 
 🔗 **Frontend (Vercel):**  
-https://SEU-LINK-DA-VERCEL.vercel.app  
+https://fullstack-product-manager.vercel.app/  
 
 🔗 **Backend (Render):**  
-https://fullstack-product-manager-1.onrender.com  
-
-🔗 **API Endpoint:**  
-https://fullstack-product-manager-1.onrender.com/produtos  
+https://fullstack-product-manager-1.onrender.com 
+ 
 
 ---
 
