@@ -76,9 +76,11 @@ cd back
 npm install
 node server.js
 ```
+Servidor disponível em:
+http://localhost:5000
 
 ### 🔹 Frontend
-
+```bash
 cd front
 npm install
 npm run dev
