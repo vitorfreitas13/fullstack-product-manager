@@ -1,17 +1,22 @@
 # 💻 Fullstack Product Manager
 
-Projeto **Fullstack** completo para gerenciamento de produtos, desenvolvido com **Node.js, MySQL, React e Vite**.  
-Permite **cadastrar, listar, editar e deletar produtos** diretamente pelo frontend.
+Sistema Fullstack para gerenciamento de produtos, permitindo cadastrar, listar, editar e deletar produtos.
+Projeto desenvolvido com React no frontend e Node.js + Express no backend, com deploy em nuvem.
 
 ---
 
-## 🛠 Tecnologias
+🛠️ Tecnologias Utilizadas
+Frontend
+React
+Axios
+CSS
+Vercel (Deploy)
 
-- **Backend:** Node.js, Express, MySQL  
-- **Frontend:** React + Vite, Axios  
-- **Banco de dados:** MySQL (local ou online)  
-- **Testes de API:** Thunder Client / Postman  
-
+Backend
+Node.js
+Express
+CORS
+Render (Deploy)
 ---
 
 ## 🚀 Funcionalidades
