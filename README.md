@@ -84,3 +84,19 @@ http://localhost:5000
 cd front
 npm install
 npm run dev
+```
+
+📁 Estrutura do Projeto
+
+```bash
+/projeto
+   /back
+   /front
+```
+
+🚀 Melhorias Futuras
+Persistência com MongoDB
+Autenticação com JWT
+Validação de dados
+Variáveis de ambiente
+Melhorias de UI/UX
