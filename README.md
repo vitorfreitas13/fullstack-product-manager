@@ -96,7 +96,11 @@ npm run dev
 
 🚀 Melhorias Futuras
 Persistência com MongoDB
+
 Autenticação com JWT
+
 Validação de dados
+
 Variáveis de ambiente
+
 Melhorias de UI/UX
