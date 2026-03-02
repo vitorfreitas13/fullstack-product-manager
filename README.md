@@ -11,10 +11,6 @@ Aplicação desenvolvida com React no frontend e Node.js + Express no backend, c
 🔗 **Frontend (Vercel):**  
 https://fullstack-product-manager.vercel.app/  
 
-🔗 **Backend (Render):**  
-https://fullstack-product-manager-1.onrender.com 
- 
-
 ---
 
 ## 🛠️ Tecnologias Utilizadas
