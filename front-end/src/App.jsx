@@ -123,8 +123,12 @@ function App() {
         {produtos.map((produto) => (
           <li className="list-item" key={produto.id}>
             <span>
-              {produto.nome} - R$ {produto.preco} - {produto.quantidade}{" "}
-              Unidades
+              {produto.nome} -{" "}
+              {produto.preco.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+              })}{" "}
+              - {produto.quantidade} Unidades
             </span>
 
             <div className="buttons">
